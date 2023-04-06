@@ -1,0 +1,86 @@
+.login{
+    background-color: #B11926;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container{
+    background-color: #ffffff;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    font-size: 60px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.input-div-container{
+    /* border: 2px solid red; */
+    width:70%
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 40px 13px;
+}
+
+.input-div label{
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.input-div input{
+    width: 100%;
+    padding: 20px;
+}
+
+.forgot-password{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 25px;
+    background: #B11926;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    text-decoration: none;
+    transition: background .5s ease-in-out, color .5s ease-in-out;
+    margin: 10px 0;
+  }
+  
+  .btn:hover {
+    background: #ffffff;
+    cursor: pointer;
+    color: #000000;
+    border: 1px solid #000000;;
+  }
+
+.account{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.forgot-password span, 
+.account span{
+    color:#B11926;
+    cursor: pointer;
+    font-weight: 600;
+}
