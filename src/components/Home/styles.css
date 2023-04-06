@@ -1,0 +1,50 @@
+
+.homepage{
+    background-color: #B11926;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.backgroundImage{
+    width: 30%;
+}
+
+.hudibia-logo{
+    width:146px;
+}
+
+.welcome-text p{
+    font-size: 150px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    background: #ffffff;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    text-decoration: none;
+    transition: background .5s ease-in-out, color .5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #B11926;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
