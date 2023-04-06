@@ -5,6 +5,7 @@ const Login = () => {
     return ( 
         <div className='login'>
             <img className='hudibia-logo' src={hudibiaLogo} alt='welcome-page' />
+            
 
             <div className='login-container'>
                 <p className='header'>Login</p>
@@ -26,7 +27,7 @@ const Login = () => {
 
                 <button className='btn'>Login</button>
 
-                <p className='account'>Don't have an account? <span>Sign Up</span></p>
+                <p className='account-signup'>Don't have an account? <span>Sign Up</span></p>
 
             </div>
         </div>
