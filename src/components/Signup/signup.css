@@ -1,7 +1,6 @@
 .signup{
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
 }
 
 .left-section{
@@ -17,7 +16,7 @@
 }
 
 .signup-bg{
-    width:600px;
+    width:500px;
 }
 
 .right-section{
@@ -27,7 +26,7 @@
     width: 45%;
 }
 .signup-head{
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
 }
@@ -77,4 +76,11 @@
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 10px;
+}
+
+.login-link{
+    color:#B11926;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
 }

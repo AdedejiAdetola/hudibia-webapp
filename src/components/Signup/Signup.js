@@ -1,6 +1,9 @@
 import signupPic from '../../images/signup.svg';
 import hudibiaLogo from '../../images/logo.png';
 import './signup.css';
+import { Link } from 'react-router-dom';
+
+
 const Signup = () => {
     return ( 
         <div className='signup'>
@@ -14,7 +17,7 @@ const Signup = () => {
 
             <div className='right-section'>
                 <p className='signup-head'>Sign up</p>
-                <p class='sub'>Please fill the information below</p>
+                <p className='sub'>Please fill the information below</p>
 
                 <div className='inputs'>
 
@@ -48,7 +51,7 @@ const Signup = () => {
 
                     <button className='btn'>Register</button>
 
-                    <p className='account'>Have an account? <span>Login</span></p>
+                    <p className='account'>Have an account? <span><Link className='login-link' to="/login">Login</Link></span></p>
                 </div>
             </div>
         </div>

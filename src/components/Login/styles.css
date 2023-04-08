@@ -79,8 +79,9 @@
 }
 
 .forgot-password span, 
-.account span{
+.link{
     color:#B11926;
     cursor: pointer;
     font-weight: 600;
+    text-decoration: none;
 }

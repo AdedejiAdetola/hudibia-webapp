@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import hudibiaLogo from '../../images/logo.png';
 import './styles.css';
 
@@ -27,7 +28,7 @@ const Login = () => {
 
                 <button className='btn'>Login</button>
 
-                <p className='account-signup'>Don't have an account? <span>Sign Up</span></p>
+                <p className='account-signup'>Don't have an account? <span><Link className='link' to='/signup'>Sign up</Link></span></p>
 
             </div>
         </div>
