@@ -1,6 +1,7 @@
 .signup{
     display: flex;
     box-sizing: border-box;
+    height:100vh;
 }
 
 .left-section{
