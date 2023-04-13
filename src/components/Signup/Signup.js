@@ -1,10 +1,29 @@
 import signupPic from '../../images/signup.svg';
 import hudibiaLogo from '../../images/logo.png';
 import './signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { signUpAction } from '../../redux/actions/signUpAction';
 
 
 const Signup = () => {
+    const initialState = { usertype:'', email:'', password:'', confirmpassword:'', firstname:'', lastname:'', phonenumber:'', location:'', securityquestion:'', securityanswer:'' }
+
+    const [signUpData, setSignUpData] = useState(initialState);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setSignUpData({ ...signUpData, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(signUpAction(signUpData, navigate));//dispatch the signupdata
+        //console.log(signUpData);
+    }
+
     return ( 
         <div className='signup'>
             <div className='left-section'>
@@ -21,35 +40,39 @@ const Signup = () => {
 
                 <div className='inputs'>
 
-                    <select name="user-type" id="user-type">
-                        <option value="Select user type">Select user type</option>
-                        <option value="doctor">Doctor</option>
-                        <option value="patient">Patient</option>
-                    </select>
+                    <form onSubmit={handleSubmit}>
+                        <select name="usertype" id="usertype" onChange={handleChange}>
+                            <option value="Select user type">Select user type</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="patient">Patient</option>
+                        </select>
 
-                    <input type='email' name='email' placeholder='Enter email address' required/>
+                        <input type='email' name='email' placeholder='Enter email address' required onChange={handleChange}/>
 
-                    <input type='password' name='password' placeholder='Password' required/>
+                        <input type='password' name='password' placeholder='Password' required onChange={handleChange}/>
 
-                    <input type='password' name='confirm-password' placeholder='Confirm Password' required/>
+                        <input type='password' name='confirmpassword' placeholder='Confirm Password' required onChange={handleChange}/>
 
-                    <input type='text' name='first-name'placeholder='First name' required/>
+                        <input type='text' name='firstname'placeholder='First name' required onChange={handleChange}/>
 
-                    <input type='text' name='last-name' placeholder='Last Name' required/>
+                        <input type='text' name='lastname' placeholder='Last Name' required onChange={handleChange}/>
 
-                    <input name='phone-number' type='tel' placeholder='Phone Number' required/>
+                        <input name='phonenumber' type='tel' placeholder='Phone Number' required onChange={handleChange}/>
 
-                    <input name='location' type='text' placeholder='Location' required/>
+                        <input name='location' type='text' placeholder='Location' required onChange={handleChange}/>
 
-                    <select name="security-question" id="security-question">
-                        <option value="Select security question">Select security question</option>
-                        <option value="favourite animal">What is your favourite animal?</option>
-                        <option value="best color">What is your best color?</option>
-                    </select>
+                        <select name="securityquestion" id="security-question" onChange={handleChange}>
+                            <option value="Select security question">Select security question</option>
+                            <option value="favourite animal">What is your favourite animal?</option>
+                            <option value="best color">What is your best color?</option>
+                        </select>
 
-                    <input type='text' placeholder='Security Answer'  name='security-answer' required/>
+                        <input type='text' placeholder='Security Answer'  name='securityanswer' required onChange={handleChange}/>
 
-                    <button className='btn'>Register</button>
+                        <button className='btn'>Register</button>
+                    </form>
+
+                    
 
                     <p className='account'>Have an account? <span><Link className='login-link' to="/login">Login</Link></span></p>
                 </div>
