@@ -13,12 +13,12 @@ const Login = () => {
 
                 <div className='input-div-container'>
                     <div className='input-div'>
-                        <label for='email'>Email</label>
+                        <label htmlFor='email'>Email</label>
                         <input id='email' type='email' placeholder='Enter your email' required/>
                     </div>
 
                     <div className='input-div'>
-                        <label for='password'>Password</label>
+                        <label htmlFor='password'>Password</label>
                         <input id='password' type='password' placeholder='Enter your password' required/>
                     </div>
                 </div>

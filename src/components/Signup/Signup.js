@@ -8,7 +8,7 @@ import { signUpAction } from '../../redux/actions/signUpAction';
 
 
 const Signup = () => {
-    const initialState = { usertype:'', email:'', password:'', confirmpassword:'', firstname:'', lastname:'', phonenumber:'', location:'', securityquestion:'', securityanswer:'' }
+    const initialState = { userType:'', email:'', password:'', confirmPassword:'', firstName:'', lastName:'', phoneNumber:'', location:'', securityQuestion:'', securityAnswer:'' }
 
     const [signUpData, setSignUpData] = useState(initialState);
     const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const Signup = () => {
                 <div className='inputs'>
 
                     <form onSubmit={handleSubmit}>
-                        <select name="usertype" id="usertype" onChange={handleChange}>
+                        <select name="userType" id="userType" onChange={handleChange}>
                             <option value="Select user type">Select user type</option>
                             <option value="doctor">Doctor</option>
                             <option value="patient">Patient</option>
@@ -51,23 +51,23 @@ const Signup = () => {
 
                         <input type='password' name='password' placeholder='Password' required onChange={handleChange}/>
 
-                        <input type='password' name='confirmpassword' placeholder='Confirm Password' required onChange={handleChange}/>
+                        <input type='password' name='confirmPassword' placeholder='Confirm Password' required onChange={handleChange}/>
 
-                        <input type='text' name='firstname'placeholder='First name' required onChange={handleChange}/>
+                        <input type='text' name='firstName'placeholder='First name' required onChange={handleChange}/>
 
-                        <input type='text' name='lastname' placeholder='Last Name' required onChange={handleChange}/>
+                        <input type='text' name='lastName' placeholder='Last Name' required onChange={handleChange}/>
 
-                        <input name='phonenumber' type='tel' placeholder='Phone Number' required onChange={handleChange}/>
+                        <input name='phoneNumber' type='tel' placeholder='Phone Number' required onChange={handleChange}/>
 
                         <input name='location' type='text' placeholder='Location' required onChange={handleChange}/>
 
-                        <select name="securityquestion" id="security-question" onChange={handleChange}>
+                        <select name="securityQuestion" id="security-question" onChange={handleChange}>
                             <option value="Select security question">Select security question</option>
                             <option value="favourite animal">What is your favourite animal?</option>
                             <option value="best color">What is your best color?</option>
                         </select>
 
-                        <input type='text' placeholder='Security Answer'  name='securityanswer' required onChange={handleChange}/>
+                        <input type='text' placeholder='Security Answer'  name='securityAnswer' required onChange={handleChange}/>
 
                         <button className='btn'>Register</button>
                     </form>
