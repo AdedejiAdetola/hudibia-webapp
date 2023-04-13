@@ -25,7 +25,7 @@ const Signup = () => {
     }
 
     return ( 
-        <div className='signup'>
+        <div className='signup fade-in-fwd'>
             <div className='left-section'>
 
                 <img className='hudibia-logo' src={hudibiaLogo} alt='welcome-page' />
@@ -38,44 +38,39 @@ const Signup = () => {
                 <p className='signup-head'>Sign up</p>
                 <p className='sub'>Please fill the information below</p>
 
-                <div className='inputs'>
+                <form className="inputs" onSubmit={handleSubmit}>
+                    <select name="userType" id="userType" onChange={handleChange}>
+                        <option value="Select user type">Select user type</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="patient">Patient</option>
+                    </select>
 
-                    <form onSubmit={handleSubmit}>
-                        <select name="userType" id="userType" onChange={handleChange}>
-                            <option value="Select user type">Select user type</option>
-                            <option value="doctor">Doctor</option>
-                            <option value="patient">Patient</option>
-                        </select>
+                    <input type='email' name='email' placeholder='Enter email address' required onChange={handleChange}/>
 
-                        <input type='email' name='email' placeholder='Enter email address' required onChange={handleChange}/>
+                    <input type='password' name='password' placeholder='Password' required onChange={handleChange}/>
 
-                        <input type='password' name='password' placeholder='Password' required onChange={handleChange}/>
+                    <input type='password' name='confirmPassword' placeholder='Confirm Password' required onChange={handleChange}/>
 
-                        <input type='password' name='confirmPassword' placeholder='Confirm Password' required onChange={handleChange}/>
+                    <input type='text' name='firstName'placeholder='First name' required onChange={handleChange}/>
 
-                        <input type='text' name='firstName'placeholder='First name' required onChange={handleChange}/>
+                    <input type='text' name='lastName' placeholder='Last Name' required onChange={handleChange}/>
 
-                        <input type='text' name='lastName' placeholder='Last Name' required onChange={handleChange}/>
+                    <input name='phoneNumber' type='tel' placeholder='Phone Number' required onChange={handleChange}/>
 
-                        <input name='phoneNumber' type='tel' placeholder='Phone Number' required onChange={handleChange}/>
+                    <input name='location' type='text' placeholder='Location' required onChange={handleChange}/>
 
-                        <input name='location' type='text' placeholder='Location' required onChange={handleChange}/>
+                    <select name="securityQuestion" id="security-question" onChange={handleChange}>
+                        <option value="Select security question">Select security question</option>
+                        <option value="favourite animal">What is your favourite animal?</option>
+                        <option value="best color">What is your best color?</option>
+                    </select>
 
-                        <select name="securityQuestion" id="security-question" onChange={handleChange}>
-                            <option value="Select security question">Select security question</option>
-                            <option value="favourite animal">What is your favourite animal?</option>
-                            <option value="best color">What is your best color?</option>
-                        </select>
+                    <input type='text' placeholder='Security Answer'  name='securityAnswer' required onChange={handleChange}/>
 
-                        <input type='text' placeholder='Security Answer'  name='securityAnswer' required onChange={handleChange}/>
-
-                        <button className='btn'>Register</button>
-                    </form>
-
-                    
+                    <button className='btn'>Register</button>
 
                     <p className='account'>Have an account? <span><Link className='login-link' to="/login">Login</Link></span></p>
-                </div>
+                </form>                    
             </div>
         </div>
      );

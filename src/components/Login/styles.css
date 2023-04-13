@@ -47,6 +47,12 @@
 .forgot-password{
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.btn-cover{
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -85,3 +91,36 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+/* ANIMATION */
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+@keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+  

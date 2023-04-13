@@ -7,17 +7,16 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return ( 
         <div className='homepage'>
-            <img className='backgroundImage' src={backgroundImage} alt='welcome-page' />
+            <img className='backgroundImage slide-in-left' src={backgroundImage} alt='welcome-page' />
 
             <div className='right'>
-                <img className='hudibia-logo' src={hudibiaLogo} alt='welcome-page' />
-                <div className='welcome-text'>
+                <img className='hudibia-logo slide-in-top' src={hudibiaLogo} alt='welcome-page' />
+                <div className='welcome-text slide-in-right'>
                     <p>Welcome</p>
                     <p>to Hudibia</p>
                 </div>
-                <div className='buttons'>
-                    <button className='btn'><Link to="/login">Login</Link></button>
-                    <button className='btn'><Link to="/signup">Signup</Link></button>
+                <div className='buttons slide-in-bottom'>
+                    <Link className='btn' to="/login">Login</Link><Link className='btn' to="/signup">Signup</Link>
                 </div>
             </div>
         </div>

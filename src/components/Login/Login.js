@@ -25,32 +25,32 @@ const Login = () => {
 
 
     return ( 
-        <div className='login'>
+        <div className='login fade-in-fwd'>
             <img className='hudibia-logo' src={hudibiaLogo} alt='welcome-page' />
             
 
             <div className='login-container'>
                 <p className='header'>Login</p>
 
-                <form onSubmit={handleSubmit}>
-                    <div className='input-div-container'>
+                <form className='input-div-container' onSubmit={handleSubmit}>
                         
-                        <div className='input-div'>
-                            <label htmlFor='email'>Email</label>
-                            <input id='email' name='email' type='email' placeholder='Enter your email' onChange={handleChange} required/>
-                        </div>
+                    <div className='input-div'>
+                        <label htmlFor='email'>Email</label>
+                        <input id='email' name='email' type='email' placeholder='Enter your email' onChange={handleChange} required/>
+                    </div>
 
-                        <div className='input-div'>
-                            <label htmlFor='password'>Password</label>
-                            <input id='password' name='password' type='password' placeholder='Enter your password' onChange={handleChange} required/>
-                        </div>
-                        
+                    <div className='input-div'>
+                        <label htmlFor='password'>Password</label>
+                        <input id='password' name='password' type='password' placeholder='Enter your password' onChange={handleChange} required/>
                     </div>
                     
 
                     <p className='forgot-password'>Having issues with Login? <span>Forgot Password</span></p>
 
-                    <button className='btn'>Login</button>
+                    <div className='btn-cover'>
+                        <button className='btn'>Login</button>
+                    </div>
+                    
 
                 </form>
 
