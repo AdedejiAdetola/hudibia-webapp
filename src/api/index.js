@@ -15,7 +15,8 @@ API.interceptors.request.use((req) => {
 
 const user_url = '/users';
 
-export const signUp = (signUpData) => API.post(`${user_url}/signup`, signUpData)
+export const signUp = (signUpData) => API.post(`${user_url}/signup`, signUpData);
+export const signIn = (signInData) => API.post(`${user_url}/signin`, signInData)
 
 //const post_url = '/posts';
 
