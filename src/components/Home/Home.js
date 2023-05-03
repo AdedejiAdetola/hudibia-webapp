@@ -16,7 +16,8 @@ const Home = () => {
                     <p>to Hudibia</p>
                 </div>
                 <div className='buttons slide-in-bottom'>
-                    <Link className='btn' to="/login">Login</Link><Link className='btn' to="/signup">Signup</Link>
+                    <Link className='btn' to="/login">Login</Link>
+                    <Link className='btn' to="/signup">Signup</Link>
                 </div>
             </div>
         </div>

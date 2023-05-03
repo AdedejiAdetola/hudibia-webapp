@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
+import FindDoctors from './components/Patients/FindDoctors/FindDoctors';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path='/login' exact element={<Login />}/>
         <Route path='/signup' exact element={<Signup />}/>
         <Route path='/dashboard' exact element={<Dashboard />}/>
+        <Route path='/find-doctor' exact element={<FindDoctors />}/>
       </Routes>
     </ BrowserRouter>
   );

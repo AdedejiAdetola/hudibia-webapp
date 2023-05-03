@@ -1,0 +1,7 @@
+.doctor-component{
+    display: flex;
+}
+
+.non-sidebar{
+    width: 100%;
+}

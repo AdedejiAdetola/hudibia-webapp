@@ -1,0 +1,12 @@
+.titlebar-container{
+    background-color: #981B1B;
+    padding: 10px 0;
+    margin-bottom: 15px;    
+}
+
+.titlebar-container p{
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
