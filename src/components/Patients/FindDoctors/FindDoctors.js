@@ -6,6 +6,7 @@ import DoctorList from "./DoctorsList/DoctorList";
 import TitleBar from "../TitleBar/TitleBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faSearch, faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import Input from "../InputComponent/Input";
 
 const FindDoctors = () => {
     //change of state from the initial state to the stae of the input
@@ -48,15 +49,23 @@ const FindDoctors = () => {
                             </select>
                         </div>
                         
-                        <div className="input-fname">
-                            <FontAwesomeIcon className="f-user" icon={faUser} />
-                            <input type='text' name='firstName'placeholder='First name' onChange={handleChange}/>
-                        </div>
+                        <Input
+                            icon={faUser}
+                            type='text'
+                            id='firstName' 
+                            name='firstName' 
+                            placeholder='First Name'
+                            handleChange={handleChange}
+                        />
                         
-                        <div className="input-location">
-                            <FontAwesomeIcon className="l-map" icon={faMapMarker}/>
-                            <input name='location' type='text' placeholder='Location' onChange={handleChange}/>
-                        </div>
+                        <Input
+                            icon={faMapMarker}
+                            type='text'
+                            id='find-docs--location' 
+                            name='location' 
+                            placeholder='Location'
+                            handleChange={handleChange}
+                        />
                         
                         
                         <div className="checkbox">

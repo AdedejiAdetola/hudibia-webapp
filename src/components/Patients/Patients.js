@@ -11,6 +11,7 @@ const Doctors = () => {
             <SideBar />
             <div className="non-sidebar">
                 <NavBar />
+                <h1>Hi {user.result.firstName}</h1>
             </div>
         </div>
      );

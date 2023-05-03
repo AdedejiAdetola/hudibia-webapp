@@ -1,10 +1,11 @@
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import FindDoctors from './components/Patients/FindDoctors/FindDoctors';
+import DrugIndex from './components/Patients/DrugIndex/DrugIndex';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/signup' exact element={<Signup />}/>
         <Route path='/dashboard' exact element={<Dashboard />}/>
         <Route path='/find-doctor' exact element={<FindDoctors />}/>
+        <Route path='/drug-index' exact element={<DrugIndex />}/>
       </Routes>
     </ BrowserRouter>
   );

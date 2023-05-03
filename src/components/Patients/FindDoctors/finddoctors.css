@@ -21,9 +21,7 @@
     position: relative;
 }
 
-.find-doc--form .select .s-search,
-.find-doc--form .input-fname .f-user,
-.find-doc--form .input-location .l-map{
+.find-doc--form .select .s-search{
     font-size: 20px;
     position: absolute;
     padding: 20px;
@@ -31,13 +29,11 @@
     color: #E6E6E6;
 }
 
-.find-doc--form select,
-.find-doc--form input{
+.find-doc--form select{
     margin-bottom: 10px;
 }
 
-.find-doc--form select,
-.find-doc--form input[type='text'] {
+.find-doc--form select{
     padding: 20px;
     padding-left: 50px;
     width:100%;
