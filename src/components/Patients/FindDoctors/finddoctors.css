@@ -5,3 +5,54 @@
 .non-sidebar{
     width: 100%;
 }
+
+.section1{
+    display: flex;
+    justify-content: center;
+}
+
+.find-doc--form{
+   display: flex;
+   flex-direction: column;
+   width:60%;
+   box-sizing: border-box;
+}
+.find-doc--form .select {
+    position: relative;
+}
+
+.find-doc--form .select .s-search,
+.find-doc--form .input-fname .f-user,
+.find-doc--form .input-location .l-map{
+    font-size: 20px;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.find-doc--form select,
+.find-doc--form input{
+    margin-bottom: 10px;
+}
+
+.find-doc--form select,
+.find-doc--form input[type='text'] {
+    padding: 20px;
+    padding-left: 50px;
+    width:100%;
+}
+.find-doc--form .checkbox{
+    display: flex;
+}
+
+.find-doc--form .checkbox input {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 2px solid red;
+}
+.find-doc--form .checkbox span {
+    margin-left: 20px;
+    font-weight: 900;
+}
