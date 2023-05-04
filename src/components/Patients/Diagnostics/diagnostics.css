@@ -1,0 +1,23 @@
+.diagnostics{
+    display: flex;
+}
+
+.non-sidebar{
+    width: 100%;
+}
+
+.diagnostics-section{
+    display: flex;
+    justify-content: center;
+}
+
+.diagnostics--form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.diagnostics-btn{
+    text-align: center;
+}
+

@@ -44,3 +44,7 @@ hr {
     border-top: 3px solid;
     color: #981B1B;
 }
+
+.nav-hr{
+    width: 100%;
+}

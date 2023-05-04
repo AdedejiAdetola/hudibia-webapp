@@ -24,7 +24,7 @@ const NavBar = () => {
                     <FontAwesomeIcon className='faUser-icon' icon={faUser} />
                 </div>
             </div>
-            <hr />
+            <hr className='nav-hr'/>
         </div>
         
      );

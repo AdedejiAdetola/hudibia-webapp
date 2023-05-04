@@ -4,6 +4,7 @@ import TitleBar from "../TitleBar/TitleBar";
 import './drugindex.css';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Input from "../InputComponent/Input";
+import DrugList from "./DrugList/DrugList";
 
 const DrugIndex = () => {
     const handleChange = () => {
@@ -36,7 +37,7 @@ const DrugIndex = () => {
                     </form>
                 </div>
 
-                
+                <DrugList />
             </div>
         </div>
      );
