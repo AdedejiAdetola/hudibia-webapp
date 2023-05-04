@@ -9,6 +9,7 @@ import DrugIndex from './components/Patients/DrugIndex/DrugIndex';
 import DiseaseAlert from './components/Patients/DiseaseAlert/DiseaseAlert';
 import Clinic from './components/Patients/Clinic/Clinic';
 import Diagnostics from './components/Patients/Diagnostics/Diagnostics';
+import Appointment from './components/Patients/Appointment/Appointment';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/disease-alerts' exact element={<DiseaseAlert />}/>
         <Route path='/clinic' exact element={<Clinic />}/>
         <Route path='/diagnostics' exact element={<Diagnostics />}/>
+        <Route path='/appointment' exact element={<Appointment />}/>
       </Routes>
     </ BrowserRouter>
   );
