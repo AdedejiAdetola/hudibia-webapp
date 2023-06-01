@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import Patients from "../Patients/Patients";
+import Doctors from "../Doctors/Doctors";
 
 const Dashboard = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
@@ -37,17 +38,20 @@ const Dashboard = () => {
         <div>
             {
                 (() => {
+                  //Should be doctor
                     if (user?.result?.userType === 'doctor') {
                         return(
-                            <div>
-                                <Patients />
-                            </div>
+                            <>
+                                <Doctors />
+                            </>
                         )
                         
                         
                     } else if (user?.result?.userType === 'patient') {
+                      //should be patient
                         return(
                             <>
+                              <Patients />
                             </>
                         )
                     }

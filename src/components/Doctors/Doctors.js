@@ -1,8 +1,8 @@
 import NavBar from "./NavBar/NavBar";
 import SideBar from "./SideBar/Sidebar";
-import './patients.css';
+import './doctors.css';
 
-const Patients = () => {
+const Doctors = () => {
     const user = JSON.parse(localStorage.getItem('profile'));
 
     return ( 
@@ -17,4 +17,4 @@ const Patients = () => {
      );
 }
  
-export default Patients;
+export default Doctors;

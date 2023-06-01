@@ -1,8 +1,8 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './appointmentcard.css';
+import './dappointmentcard.css';
 
-const AppointmentCard = () => {
+const DAppointmentCard = () => {
     const attended = true
     return ( 
         <div>
@@ -32,4 +32,4 @@ const AppointmentCard = () => {
      );
 }
  
-export default AppointmentCard;
+export default DAppointmentCard;

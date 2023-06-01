@@ -1,0 +1,57 @@
+.drug-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    width: 60%;
+}
+
+.drug-title{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.drug-details{
+    width:60%;
+}
+
+.drug-details--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mode-of-action,
+.indications,
+.presentations,
+.dosage,
+.extras {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-edit{
+    border: none;
+    background-color: white;
+  cursor: pointer;
+}
+
+.d-contents{
+    width: 100%;
+}
+
+.d-contents1{
+    background-color: grey;
+    padding: 20px;
+}
+
+.l-hr{
+    width: 100%
+}
+
+  

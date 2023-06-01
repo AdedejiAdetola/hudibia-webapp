@@ -1,0 +1,50 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar-search .fas-icon{
+    font-size: 20px;
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+}
+
+.search-input{
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 5px;
+    width: 200px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.faGear-icon,
+.faBell-icon,
+.faUser-icon{
+    font-size: 30px;
+}
+
+.faGear-icon,
+.faBell-icon{
+    margin-right: 25px;
+}
+
+.faUser-icon{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+hr {
+    height: 20px;
+    border: none;
+    border-top: 3px solid;
+    color: #981B1B;
+}
+
+.nav-hr{
+    width: 100%;
+}

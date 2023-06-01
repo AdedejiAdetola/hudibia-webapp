@@ -1,0 +1,24 @@
+.drug-component{
+    display: flex;
+}
+
+.non-sidebar{
+    width: 100%;
+}
+
+.search-section{
+    display: flex;
+    justify-content: center;
+}
+
+.drug-index--form{
+   display: flex;
+   flex-direction: column;
+   width:60%;
+   box-sizing: border-box;
+}
+
+.drug-index--form .btn-div{
+    text-align: center;
+}
+

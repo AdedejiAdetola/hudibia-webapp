@@ -1,0 +1,52 @@
+.doctorCard-container{
+    width: 300px;
+    padding: 20px 20px 10px;
+    box-shadow: 4px 4px 15px #DCB2B2;
+    border-radius: 25px;
+}
+
+.doctor-row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-row1 .profile-details {
+    text-align: center;
+}
+
+.doctor-row1 .profile-details p{
+    font-weight: 900;
+}
+
+.doctor-row2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-row2 p{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.doctor-row2 .doctor-row2--bold{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.doctor-row2--innerflex{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.innerflex-space{
+    margin-left: 10px;
+}
+
+.doctor-row3{
+    text-align: center;
+}

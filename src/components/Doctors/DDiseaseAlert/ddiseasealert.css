@@ -1,0 +1,28 @@
+.disease-alert{
+    display: flex;
+}
+
+.non-sidebar{
+    width: 100%;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+}
+
+.d-alert--form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.disease-btn{
+    text-align: center;
+}
+
+.main-section2 {
+    margin-top: 20px;
+
+}
+

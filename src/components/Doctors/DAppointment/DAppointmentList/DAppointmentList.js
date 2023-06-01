@@ -1,9 +1,9 @@
 import { useState } from "react";
 import NotAvailable from "../../NotAvailable/NotAvailable";
-import './appointmentlist.css';
-import AppointmentCard from "./AppointmentCard/AppointmentCard";
+import './dappointmentlist.css';
+import DAppointmentCard from "./DAppointmentCard/DAppointmentCard";
 
-const AppointmentList = () => {
+const DAppointmentList = () => {
     const [state, setState] = useState({
         current: true,
         noCurrentAppointment: true,
@@ -36,8 +36,8 @@ const AppointmentList = () => {
                     state.current && 
                     <div>
                         <h1>You Have Current Appointments</h1>
-                        <AppointmentCard />
-                        <AppointmentCard />
+                        <DAppointmentCard />
+                        <DAppointmentCard />
                     </div>
                     
                     //if current appointment length > 0
@@ -55,9 +55,9 @@ const AppointmentList = () => {
                     !state.current && 
                     <div>
                         <h1>You Have Past Appointments</h1>
-                        <AppointmentCard />
-                        <AppointmentCard />
-                        <AppointmentCard />
+                        <DAppointmentCard />
+                        <DAppointmentCard />
+                        <DAppointmentCard />
                     </div>
                     //if past appointment length > 0
                     // loop through current appointments
@@ -69,4 +69,4 @@ const AppointmentList = () => {
      );
 }
  
-export default AppointmentList;
+export default DAppointmentList;

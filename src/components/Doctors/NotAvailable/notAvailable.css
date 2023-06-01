@@ -1,0 +1,15 @@
+.na-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.na-container img{
+    width: 300px;
+}
+
+.na-container p{
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 10px;
+}

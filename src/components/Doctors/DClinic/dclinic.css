@@ -1,0 +1,23 @@
+.clinic{
+    display: flex;
+}
+
+.non-sidebar{
+    width: 100%;
+}
+
+.clinic-section{
+    display: flex;
+    justify-content: center;
+}
+
+.clinic--form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.clinic-btn{
+    text-align: center;
+}
+
